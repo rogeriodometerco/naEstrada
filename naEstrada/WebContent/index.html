@@ -165,11 +165,23 @@ function initMap() {
     }, function(response, status) {
       if (status === google.maps.DirectionsStatus.OK) {
         directionsDisplay.setDirections(response);
+        var polyline = extrairPolyline(response);
+        console.log("RESPONSE: " + response);
+        console.log("Polyline: " + polyline);
       } else {
         window.alert('Directions request failed due to ' + status);
       }
     });
   }
+}
+function extrairPolyline(dirResult) {
+	var polyline = "";
+	for (var i = 0; i < dirResult.routes[0].legs.length; i++) {
+		for (var j = 0; j < dirResult.routes[0].legs[i].steps.length; j++) {
+			polyline += dirResult.routes[0].legs[i].steps[j].polyline.points;
+		}
+	}
+	return polyline;
 }
 
     </script>
