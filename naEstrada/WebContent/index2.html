@@ -11,8 +11,17 @@ html, body {
 	padding: 0;
 }
 
+#panel {
+	float: left;
+	padding: 10px;
+}
+
 #map {
 	height: 100%;
+}
+
+.praca {
+	font-size: 1.5em;
 }
 
 .controls {
@@ -32,35 +41,28 @@ html, body {
 	font-size: 15px;
 	font-weight: 300;
 	margin-left: 12px;
-	padding: 0 11px 0 13px;
+	padding: 10 11px 10 13px;
 	text-overflow: ellipsis;
 	width: 200px;
+	display: block;
 }
 
 #origin-input:focus, #destination-input:focus {
 	border-color: #4d90fe;
-}
-
-#mode-selector {
-	color: #fff;
-	background-color: #4d90fe;
-	margin-left: 12px;
-	padding: 5px 11px 0px 11px;
-}
-
-#mode-selector label {
-	font-family: Roboto;
-	font-size: 13px;
-	font-weight: 300;
 }
 </style>
 </head>
 <body>
 	<div id="panel">
 		<input id="origin-input" class="controls" type="text"
-			placeholder="Origem"> 
-		<input id="destination-input" class="controls" type="text"
-			placeholder="Destino">
+			placeholder="Origem"> <input id="destination-input"
+			class="controls" type="text" placeholder="Destino">
+		<p />
+		<label>Distância</label> <span id="distancia-result"></span>
+		<p />
+		<label>Valor do pedágio</label> <span id="pedagio-result"></span>
+		<p />
+		<label>Praças de pedágio</label> <span id="pracas" />
 	</div>
 
 	<div id="map"></div>
@@ -85,9 +87,9 @@ html, body {
 			var origin_input = document.getElementById('origin-input');
 			var destination_input = document.getElementById('destination-input');
 
-			map.controls[google.maps.ControlPosition.LEFT_TOP]
+			/*map.controls[google.maps.ControlPosition.LEFT_TOP]
 					.push(panel);
-
+			*/
 			var origin_autocomplete = new google.maps.places.Autocomplete(
 					origin_input);
 			origin_autocomplete.bindTo('bounds', map);
@@ -138,6 +140,7 @@ html, body {
 								// If the place has a geometry, store its place ID and route if we have
 								// the other place ID
 								destination_place_id = place.place_id;
+
 								route(origin_place_id, destination_place_id,
 										directionsService, directionsDisplay);
 							});
@@ -169,6 +172,7 @@ html, body {
 
 		function viagemRoteirizada(response) {
 			var polyline = extrairPolyline(response);
+			document.getElementById("distancia-result").innerText = response.routes[0].legs[0].distance.text;
 			var calculo = submeter(polyline);
 			exibirCalculoViagem(calculo);
 			//$("#input").slideUp(); 
@@ -217,6 +221,7 @@ html, body {
 
 		function exibirCalculoViagem(dados) {
 			//TODO
+			/*
 			var resposta = "";
 			for (var i in dados) {
 				for (var j in dados[i]) {
@@ -224,7 +229,30 @@ html, body {
 				}
 			}
 			alert(resposta);
+			*/
 			console.log(dados);
+			
+			// Exibição das praças de pedágio.
+			var pracas = document.getElementById("pracas");
+			var div = "";
+			var valorPedagio = 0;
+			for (var i in dados) {
+				div += "<p/><div>";
+				div += '<span class="praca">' + dados[i].praca + "</span><br/>";
+				div += dados[i].valor + "<br/>";
+				valorPedagio += dados[i].valor;
+				div += dados[i].municipio + "<br/>";
+				div += dados[i].concessionaria + "<br/>";
+				
+				/*
+				for (var j in dados[i]) {
+					div += j + ": " + dados[i][j] + "<br/>";
+				}
+				*/
+				div += "</div>";
+			}
+			document.getElementById("pedagio-result").innerText = valorPedagio;
+			pracas.innerHTML = div;
 		}
 	</script>
 	<script

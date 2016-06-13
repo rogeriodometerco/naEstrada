@@ -5,13 +5,15 @@ public class Pedagio {
 	private String praca;
 	private double valor;
 	private LatLng latLng;
+	private double raio;
 	private String municipio;
 	
-	public Pedagio(String concessionaria, String praca, double valor, LatLng latLng, String municipio) {
+	public Pedagio(String concessionaria, String praca, double valor, LatLng latLng, double raio, String municipio) {
 		this.concessionaria = concessionaria;
 		this.praca = praca;
 		this.valor = valor;
 		this.latLng = latLng;
+		this.raio = raio;
 		this.municipio = municipio;
 	}
 
@@ -45,6 +47,14 @@ public class Pedagio {
 
 	public void setLatLng(LatLng latLng) {
 		this.latLng = latLng;
+	}
+	
+	public double getRaio() {
+		return raio;
+	}
+	
+	public void setRaio(double raio) {
+		this.raio = raio;
 	}
 
 	public String getMunicipio() {

@@ -1,0 +1,1506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Pedágios Paraná.kml</name>
+	<StyleMap id="msn_dollar00010">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_dollar2010</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_dollar2010</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_dollar00100">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_dollar210</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_dollar210</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin0091">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/dollar.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin00800">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin0091</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl11020</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_dollar300">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/dollar.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_dollar00000">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_dollar2000</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_dollar2000</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_dollar2010">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/dollar.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_dollar210">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/dollar.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin02101">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/dollar.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_dollar201">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/dollar.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_dollar1001">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_dollar300</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_dollar100</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin902">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin02101</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0621</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_dollar201">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/dollar.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_dollar0001">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_dollar201</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_dollar201</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin750">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin0091</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl11020</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl0621">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/dollar.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_dollar2000">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/dollar.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_dollar2010">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/dollar.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl11020">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/dollar.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_dollar210">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/dollar.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_dollar100">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/dollar.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_dollar2000">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/dollar.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>Pedágios Paraná</name>
+		<open>1</open>
+		<Placemark>
+			<name>Pedágio - Campina Grande do Sul, PR</name>
+			<open>1</open>
+			<description>Pedágio - Campina Grande do Sul - RÉGIS BITTENCOURT
+
+Bidirecional - BR 116 - Km 057
+
+Valores do pedágio 
+
+R$0,90 - Motocicletas, motonetas e biciletas a motor, 
+R$1,80 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$2,70 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 3,60 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$3,60 - Ônibus (dois eixos duplos), 
+R$ 5,40 - Ônibus com reboque (três eixos duplos),
+R$3,60 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$5,40 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$7,20 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$9,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$10,80 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$12,60 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$14,40 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$16,20 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-48.93413409993071</longitude>
+				<latitude>-25.28921910224011</latitude>
+				<altitude>0</altitude>
+				<heading>18.49114512382183</heading>
+				<tilt>0</tilt>
+				<range>653.1999745487108</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin902</styleUrl>
+			<Point>
+				<coordinates>-48.93387777777777,-25.28921666666667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, São José dos Pinhais, PR</name>
+			<open>1</open>
+			<description>Pedágio - São José dos Pinhais 
+
+Bidirecional - BR 376 - Km 637
+
+Valores do pedágio 
+
+R$0,75 - Motocicletas, motonetas e biciletas a motor, 
+R$1,50 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$2,25 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 3,00 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$3,00 - Ônibus (dois eixos duplos), 
+R$ 4,50 - Ônibus com reboque (três eixos duplos),
+R$3,00 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$4,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$6,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$7,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$9,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$10,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$12,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$13,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-49.12950903668556</longitude>
+				<latitude>-25.74594835092505</latitude>
+				<altitude>0</altitude>
+				<heading>64.23043037839611</heading>
+				<tilt>45.9026793908004</tilt>
+				<range>641.6823661721145</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_dollar1001</styleUrl>
+			<Point>
+				<coordinates>-49.12962090379485,-25.74755961626989,-3546.78340338209</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, São Miguel do Iguaçu, PR</name>
+			<open>1</open>
+			<description>Pedágio - São Miguel do Iguaçu 
+
+Bidirecional - BR 277 - Km 704,3
+
+Valores do pedágio 
+
+R$5,40 - Motocicletas, motonetas e biciletas a motor, 
+R$10,80 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$16,20 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 21,60 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$21,60 - Ônibus (dois eixos duplos), 
+R$ 32,40 - Ônibus com reboque (três eixos duplos),
+R$19,00 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$28,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$38,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$47,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$57,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$66,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$76,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$85,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-54.36349987438764</longitude>
+				<latitude>-25.42610196956779</latitude>
+				<altitude>0</altitude>
+				<heading>-0.7199952057046464</heading>
+				<tilt>0</tilt>
+				<range>785.174946226433</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin00800</styleUrl>
+			<Point>
+				<coordinates>-54.36406653333395,-25.42708859110274,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, Mandaguari, PR</name>
+			<open>1</open>
+			<description>Pedágio - Mandaguari 
+
+Bidirecional - BR 376 - Km 200,9
+
+Valores do pedágio 
+
+R$3,10 - Motocicletas, motonetas e biciletas a motor, 
+R$6,10 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$9,20 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 12,20 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$12,20 - Ônibus (dois eixos duplos), 
+R$ 18,30 - Ônibus com reboque (três eixos duplos),
+R$10,40 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$15,60 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$20,80 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$26,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$31,20 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$36,40 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$41,40 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$46,60 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<Camera>
+				<longitude>-51.73895770729533</longitude>
+				<latitude>-23.50498247343208</latitude>
+				<altitude>1051.387944002762</altitude>
+				<heading>1.673254842159579</heading>
+				<tilt>0.05352290875965432</tilt>
+				<roll>1.548132890252077</roll>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</Camera>
+			<styleUrl>#msn_dollar0001</styleUrl>
+			<Point>
+				<coordinates>-51.73929483311701,-23.50599439551952,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, Presidente Castelo Branco, PR</name>
+			<open>1</open>
+			<description>Pedágio - Castelo Branco 
+
+Bidirecional - BR 376 - Km 148,9
+
+Valores do pedágio 
+
+R$4,10 - Motocicletas, motonetas e biciletas a motor, 
+R$8,20 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$12,30 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 16,40 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$16,40 - Ônibus (dois eixos duplos), 
+R$ 24,60 - Ônibus com reboque (três eixos duplos),
+R$13,80 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$20,70 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$27,60 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$34,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$41,40 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$48,30 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$55,20 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$62,10 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-52.12939490774716</longitude>
+				<latitude>-23.29192273715859</latitude>
+				<altitude>0</altitude>
+				<heading>-1.398300587291701</heading>
+				<tilt>0</tilt>
+				<range>392.4329293423065</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_dollar00010</styleUrl>
+			<Point>
+				<coordinates>-52.1278227656017,-23.2923652179841,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, Porto Amazonas, PR</name>
+			<open>1</open>
+			<description>Pedágio - Porto Amazonas 
+
+Bidirecional - BR 277 - Km 158,3
+
+Valores do pedágio 
+
+R$4,40 - Motocicletas, motonetas e biciletas a motor, 
+R$8,80 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$13,20 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 17,60 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$17,60 - Ônibus (dois eixos duplos), 
+R$ 24,60 - Ônibus com reboque (três eixos duplos),
+R$16,40 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$24,60 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$32,80 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$41,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$49,20 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$57,40 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$65,60 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$73,80 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-49.90350720900648</longitude>
+				<latitude>-25.46811506463389</latitude>
+				<altitude>0</altitude>
+				<heading>-1.6109921920387</heading>
+				<tilt>0</tilt>
+				<range>638.2394121261234</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin750</styleUrl>
+			<Point>
+				<coordinates>-49.90410008653653,-25.46847524908424,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, Lapa, PR</name>
+			<open>1</open>
+			<description>Pedágio - Lapa 
+
+Bidirecional - BR 476 - Km 191
+
+Valores do pedágio 
+
+R$4,40 - Motocicletas, motonetas e biciletas a motor, 
+R$8,80 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$13,20 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 17,60 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$17,60 - Ônibus (dois eixos duplos), 
+R$ 24,60 - Ônibus com reboque (três eixos duplos),
+R$16,40 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$24,60 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$32,80 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$41,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$49,20 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$57,40 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$65,60 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$73,80 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-49.69927003487041</longitude>
+				<latitude>-25.72481992103673</latitude>
+				<altitude>0</altitude>
+				<heading>-1.699374245584375</heading>
+				<tilt>0</tilt>
+				<range>685.2380448603987</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin750</styleUrl>
+			<Point>
+				<coordinates>-49.69987330541949,-25.72583289080862,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, São Luís do Purunã, PR</name>
+			<open>1</open>
+			<description>Pedágio - São Luís do Purunã 
+
+Bidirecional - BR 277 - Km 132
+
+Valores do pedágio 
+
+R$3,20 - Motocicletas, motonetas e biciletas a motor, 
+R$6,40 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$9,60 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 12,80 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$12,80 - Ônibus (dois eixos duplos), 
+R$ 19,20 - Ônibus com reboque (três eixos duplos),
+R$12,20 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$18,30 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$24,40 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$30,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$36,60 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$42,70 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$48,80 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$54,90 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-49.66240101659635</longitude>
+				<latitude>-25.47127115453345</latitude>
+				<altitude>0</altitude>
+				<heading>-1.715215447910446</heading>
+				<tilt>0</tilt>
+				<range>549.3080686273573</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin750</styleUrl>
+			<Point>
+				<coordinates>-49.66201394149015,-25.4716537900592,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, Witmarsun, PR</name>
+			<open>1</open>
+			<description>Pedágio - Witmarsun 
+
+Bidirecional - BR 376 - Km 537,7
+
+Valores do pedágio 
+
+R$4,60 - Motocicletas, motonetas e biciletas a motor, 
+R$9,20 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$13,80 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 18,40 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$18,40 - Ônibus (dois eixos duplos), 
+R$ 27,60 - Ônibus com reboque (três eixos duplos),
+R$14,40 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$21,60 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$28,80 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$36,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$43,20 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$50,40 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$57,60 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$64,80 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-49.84294218945632</longitude>
+				<latitude>-25.34704301507768</latitude>
+				<altitude>0</altitude>
+				<heading>-1.63807337164885</heading>
+				<tilt>0</tilt>
+				<range>290.6574875009473</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin750</styleUrl>
+			<Point>
+				<coordinates>-49.84294218945632,-25.34704301507768,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, Imbaú, PR</name>
+			<open>1</open>
+			<description>Pedágio - Imbaú 
+
+Bidirecional - BR 376 - Km 377
+
+Valores do pedágio 
+
+R$4,30 - Motocicletas, motonetas e biciletas a motor, 
+R$8,50 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$12,80 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 17,00 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$17,00 - Ônibus (dois eixos duplos), 
+R$ 25,50 - Ônibus com reboque (três eixos duplos),
+R$14,00 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$21,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$28,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$35,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$42,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$49,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$56,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$63,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-50.790797163589</longitude>
+				<latitude>-24.38125757526344</latitude>
+				<altitude>0</altitude>
+				<heading>0.4649352247252908</heading>
+				<tilt>0</tilt>
+				<range>789.5220936967788</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin750</styleUrl>
+			<Point>
+				<coordinates>-50.79027623116868,-24.3823382088735,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, Ortigueira, PR</name>
+			<open>1</open>
+			<description>Pedágio - Ortigueira 
+
+Bidirecional - BR 376 - Km 321
+
+Valores do pedágio 
+
+R$4,30 - Motocicletas, motonetas e biciletas a motor, 
+R$8,50 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$12,80 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 17,00 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$17,00 - Ônibus (dois eixos duplos), 
+R$ 25,50 - Ônibus com reboque (três eixos duplos),
+R$14,00 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$21,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$28,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$35,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$42,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$49,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$56,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$63,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-51.08800769866826</longitude>
+				<latitude>-24.03422729130082</latitude>
+				<altitude>0</altitude>
+				<heading>-0.001909964184631505</heading>
+				<tilt>20.92374521212485</tilt>
+				<range>562.9345326112737</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin750</styleUrl>
+			<Point>
+				<coordinates>-51.08900836759513,-24.03455980440612,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, Sertaneja, PR</name>
+			<open>1</open>
+			<description>Pedágio - Sertaneja 
+
+Bidirecional - BR 323 - Km 3,6
+
+Valores do pedágio 
+
+R$5,80 - Motocicletas, motonetas e biciletas a motor, 
+R$11,50 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$17,30 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 23,00 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$23,00 - Ônibus (dois eixos duplos), 
+R$ 34,50 - Ônibus com reboque (três eixos duplos),
+R$21,80 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$32,70 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$43,60 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$54,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$65,40 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$76,30 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$87,20 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$98,10 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<Camera>
+				<longitude>-50.81693264261556</longitude>
+				<latitude>-22.91468003988387</latitude>
+				<altitude>674.1134898195434</altitude>
+				<heading>47.36284035082552</heading>
+				<tilt>0.01122207523757381</tilt>
+				<roll>47.51105092798866</roll>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</Camera>
+			<styleUrl>#m_ylw-pushpin750</styleUrl>
+			<Point>
+				<coordinates>-50.81725901364499,-22.91571325322157,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, Jacarezinho, PR</name>
+			<open>1</open>
+			<description>Pedágio - Jacarezinho 
+
+Bidirecional - BR 369 - Km 31,6
+
+Valores do pedágio 
+
+R$6,20 - Motocicletas, motonetas e biciletas a motor, 
+R$12,40 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$18,60 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 24,80 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$24,80 - Ônibus (dois eixos duplos), 
+R$ 37,20 - Ônibus com reboque (três eixos duplos),
+R$21,80 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$32,70 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$43,60 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$54,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$65,40 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$76,30 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$87,20 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$98,10 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-49.90968045142414</longitude>
+				<latitude>-23.00280868338</latitude>
+				<altitude>0</altitude>
+				<heading>-0.5033982834888832</heading>
+				<tilt>0</tilt>
+				<range>1495.634284076911</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin750</styleUrl>
+			<Point>
+				<coordinates>-49.90973196701821,-23.00423869857577,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, Jacarezinho, PR</name>
+			<open>1</open>
+			<description>Pedágio - Jacarezinho 
+
+Bidirecional - BR 369 - Km 31,6
+
+Valores do pedágio 
+
+R$6,20 - Motocicletas, motonetas e biciletas a motor, 
+R$12,40 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$18,60 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 24,80 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$24,80 - Ônibus (dois eixos duplos), 
+R$ 37,20 - Ônibus com reboque (três eixos duplos),
+R$21,80 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$32,70 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$43,60 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$54,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$65,40 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$76,30 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$87,20 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$98,10 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-49.90644096603133</longitude>
+				<latitude>-23.00722501938023</latitude>
+				<altitude>0</altitude>
+				<heading>-0.5046530497501286</heading>
+				<tilt>0</tilt>
+				<range>560.2843936630799</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin750</styleUrl>
+			<Point>
+				<coordinates>-49.90651714843728,-23.0086498479808,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, Jaguariaíva, PR</name>
+			<open>1</open>
+			<description>Pedágio - Jaguariaíva 
+
+Bidirecional - PR 151 - Km 223
+
+Valores do pedágio 
+
+R$2,90 - Motocicletas, motonetas e biciletas a motor, 
+R$5,80 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$9,70 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 11,60 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$11,60 - Ônibus (dois eixos duplos), 
+R$ 17,40 - Ônibus com reboque (três eixos duplos),
+R$9,60 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$14,40 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$19,20 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$24,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$28,80 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$33,60 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$38,40 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$43,20 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-49.77857836826505</longitude>
+				<latitude>-24.31895050481933</latitude>
+				<altitude>0</altitude>
+				<heading>-0.5570515146657608</heading>
+				<tilt>0</tilt>
+				<range>492.4898652012323</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin750</styleUrl>
+			<Point>
+				<coordinates>-49.77861536186518,-24.3195313664728,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, Rio Negro, PR</name>
+			<open>1</open>
+			<description>Pedágio - Rio Negro 
+
+Bidirecional - BR 116 - Km 204
+
+Valores do pedágio 
+
+R$1,80 - Motocicletas, motonetas e biciletas a motor, 
+R$3,60 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$5,40 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 7,20 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$7,20 - Ônibus (dois eixos duplos), 
+R$ 10,80 - Ônibus com reboque (três eixos duplos),
+R$7,20 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$10,80 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$14,40 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$18,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$21,60 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$25,20 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$28,80 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$32,40 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-49.739670429984</longitude>
+				<latitude>-26.07039867706752</latitude>
+				<altitude>0</altitude>
+				<heading>-0.5877364808046381</heading>
+				<tilt>0</tilt>
+				<range>551.1645468950762</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin750</styleUrl>
+			<Point>
+				<coordinates>-49.73996477460815,-26.07098234554059,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, Fazenda Rio Grande, PR</name>
+			<open>1</open>
+			<description>Pedágio - Fazenda Rio Grande 
+
+Bidirecional - BR 116 - Km 134 
+
+Valores do pedágio 
+
+R$1,80 - Motocicletas, motonetas e biciletas a motor, 
+R$3,60 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$5,40 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 7,20 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$7,20 - Ônibus (dois eixos duplos), 
+R$ 10,80 - Ônibus com reboque (três eixos duplos),
+R$7,20 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$10,80 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$14,40 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$18,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$21,60 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$25,20 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$28,80 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$32,40 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-49.31588214518173</longitude>
+				<latitude>-25.7143098036791</latitude>
+				<altitude>0</altitude>
+				<heading>-0.7758035230980237</heading>
+				<tilt>0</tilt>
+				<range>1299.9253721237</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin750</styleUrl>
+			<Point>
+				<coordinates>-49.3181832446512,-25.71488411711493,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, São José dos Pinhais, PR</name>
+			<open>1</open>
+			<description>Pedágio - São José dos Pinhais 
+
+Bidirecional - BR 277 - Km 60,2
+
+Valores do pedágio 
+
+R$7,30 - Motocicletas, motonetas e biciletas a motor, 
+R$14,60 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$21,90 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 29,20 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$29,20 - Ônibus (dois eixos duplos), 
+R$ 43,80 - Ônibus com reboque (três eixos duplos),
+R$24,60 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$36,90 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$49,20 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$61,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$73,80 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$86,10 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$98,40 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$105,30 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-49.03579505056514</longitude>
+				<latitude>-25.55245052081329</latitude>
+				<altitude>0</altitude>
+				<heading>-0.6672751585052701</heading>
+				<tilt>0</tilt>
+				<range>623.8241652958137</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin750</styleUrl>
+			<Point>
+				<coordinates>-49.03641991858822,-25.55227682931162,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, Arapongas, PR</name>
+			<open>1</open>
+			<description>Pedágio - Arapongas 
+
+Bidirecional - BR 369 - Km 178,8
+
+Valores do pedágio 
+
+R$3,10 - Motocicletas, motonetas e biciletas a motor, 
+R$6,10 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$9,20 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 12,20 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$12,20 - Ônibus (dois eixos duplos), 
+R$ 18,30 - Ônibus com reboque (três eixos duplos),
+R$10,40 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$15,60 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$20,80 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$26,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$31,20 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$36,40 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$41,40 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$46,60 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<Camera>
+				<longitude>-51.39835971068954</longitude>
+				<latitude>-23.36136172522968</latitude>
+				<altitude>797.0063510703809</altitude>
+				<heading>4.394997788458587</heading>
+				<tilt>0.01943446928363509</tilt>
+				<roll>4.407574426861741</roll>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</Camera>
+			<styleUrl>#msn_dollar0001</styleUrl>
+			<Point>
+				<coordinates>-51.39916403392735,-23.36109570552478,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, Jataizinho, PR</name>
+			<open>1</open>
+			<description>Pedágio - Jataizinho 
+
+Bidirecional - BR 369 - Km 126,7
+
+Valores do pedágio 
+
+R$6,70 - Motocicletas, motonetas e biciletas a motor, 
+R$13,40 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$20,10 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 26,80 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$26,80 - Ônibus (dois eixos duplos), 
+R$ 40,20 - Ônibus com reboque (três eixos duplos),
+R$21,80 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$32,70 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$43,60 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$54,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$65,40 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$76,30 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$87,20 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$98,10 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-50.95978273037575</longitude>
+				<latitude>-23.27902275648525</latitude>
+				<altitude>0</altitude>
+				<heading>-0.1794763390534659</heading>
+				<tilt>9.781712664567849</tilt>
+				<range>394.365038938069</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_dollar0001</styleUrl>
+			<Point>
+				<coordinates>-50.96004413099546,-23.27917425668997,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, Floresta, PR</name>
+			<open>1</open>
+			<description>Pedágio - Floresta 
+
+Bidirecional - BR 317 - Km 127
+
+Valores do pedágio 
+
+R$4,60 - Motocicletas, motonetas e biciletas a motor, 
+R$9,20 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$13,80 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 18,40 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$18,40 - Ônibus (dois eixos duplos), 
+R$ 27,60 - Ônibus com reboque (três eixos duplos),
+R$15,40 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$23,10 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$30,80 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$38,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$46,20 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$53,90 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$61,60 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$69,30 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-52.1077348156278</longitude>
+				<latitude>-23.63618198133952</latitude>
+				<altitude>0</altitude>
+				<heading>0.2334517098393529</heading>
+				<tilt>2.224844087446827</tilt>
+				<range>288.4513069885135</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_dollar0001</styleUrl>
+			<Point>
+				<coordinates>-52.10757167868474,-23.63651666028718,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, Campo Mourão, PR</name>
+			<open>1</open>
+			<description>Pedágio - Campo Mourão 
+
+Bidirecional - BR 369 - Km 377,9
+
+Valores do pedágio 
+
+R$4,60 - Motocicletas, motonetas e biciletas a motor, 
+R$9,20 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$13,80 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 18,40 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$18,40 - Ônibus (dois eixos duplos), 
+R$ 27,60 - Ônibus com reboque (três eixos duplos),
+R$15,40 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$23,10 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$30,80 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$38,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$46,20 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$53,90 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$61,60 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$69,30 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-52.50049817460882</longitude>
+				<latitude>-24.19746236483113</latitude>
+				<altitude>0</altitude>
+				<heading>0.3833504860450805</heading>
+				<tilt>1.036726261712287</tilt>
+				<range>212.6790942459128</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_dollar0001</styleUrl>
+			<Point>
+				<coordinates>-52.5010331672258,-24.19783704140274,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, Cascavel, PR</name>
+			<open>1</open>
+			<description>Pedágio - Cascavel 
+
+Bidirecional - BR 277 - Km 568,6
+
+Valores do pedágio 
+
+R$4,50 - Motocicletas, motonetas e biciletas a motor, 
+R$8,90 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$13,40 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 17,80 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$17,80 - Ônibus (dois eixos duplos), 
+R$ 26,70 - Ônibus com reboque (três eixos duplos),
+R$15,00 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$22,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$30,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$37,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$45,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$52,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$60,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$67,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-53.27855243189654</longitude>
+				<latitude>-25.0219154573349</latitude>
+				<altitude>0</altitude>
+				<heading>0.6412522281154289</heading>
+				<tilt>0.2613488659418684</tilt>
+				<range>364.5217227608436</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_dollar0001</styleUrl>
+			<Point>
+				<coordinates>-53.27873294512061,-25.0217181158082,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, Céu Azul, PR</name>
+			<open>1</open>
+			<description>Pedágio - Céu Azul 
+
+Bidirecional - BR 277 - Km 620,3
+
+Valores do pedágio 
+
+R$4,10 - Motocicletas, motonetas e biciletas a motor, 
+R$8,20 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$12,30 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 16,00 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$16,40 - Ônibus (dois eixos duplos), 
+R$ 24,60 - Ônibus com reboque (três eixos duplos),
+R$14,60 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$21,90 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$29,20 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$36,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$43,80 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$51,10 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$58,40 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$65,70 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-53.71374555281693</longitude>
+				<latitude>-25.08401040782539</latitude>
+				<altitude>0</altitude>
+				<heading>0.8200314291003905</heading>
+				<tilt>0.2564664665468545</tilt>
+				<range>453.2764829718947</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_dollar0001</styleUrl>
+			<Point>
+				<coordinates>-53.71349065546465,-25.08417048102643,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, Corbélia, PR</name>
+			<open>1</open>
+			<description>Pedágio - Corbélia 
+
+Bidirecional - BR 369 - Km 493,8
+
+Valores do pedágio 
+
+R$4,60 - Motocicletas, motonetas e biciletas a motor, 
+R$9,20 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$13,80 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 18,40 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$18,40 - Ônibus (dois eixos duplos), 
+R$ 27,60 - Ônibus com reboque (três eixos duplos),
+R$15,40 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$23,10 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$30,80 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$38,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$46,20 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$53,90 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$61,60 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$69,30 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-53.26827307217346</longitude>
+				<latitude>-24.74309642542199</latitude>
+				<altitude>0</altitude>
+				<heading>0.6726261913658184</heading>
+				<tilt>0</tilt>
+				<range>522.997619256354</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_dollar0001</styleUrl>
+			<Point>
+				<coordinates>-53.26867929566075,-24.74412836492491,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, Candói, PR</name>
+			<open>1</open>
+			<description>Pedágio - Candói 
+
+Bidirecional - BR 277 - Km 388
+
+Valores do pedágio 
+
+R$4,50 - Motocicletas, motonetas e biciletas a motor, 
+R$8,90 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$13,40 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 17,80 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$17,80 - Ônibus (dois eixos duplos), 
+R$ 26,70 - Ônibus com reboque (três eixos duplos),
+R$15,00 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$22,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$30,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$37,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$45,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$52,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$60,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$67,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-51.85961121685207</longitude>
+				<latitude>-25.44329926434514</latitude>
+				<altitude>0</altitude>
+				<heading>0.05881197906231701</heading>
+				<tilt>0</tilt>
+				<range>373.0818899835264</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_dollar00000</styleUrl>
+			<Point>
+				<coordinates>-51.85916666666667,-25.44388888888889,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, Relógio, PR</name>
+			<open>1</open>
+			<description>Pedágio - Prudentópolis 
+
+Bidirecional - BR 277 - Km 302
+
+Valores do pedágio 
+
+R$4,40 - Motocicletas, motonetas e biciletas a motor, 
+R$8,80 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$13,20 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 17,60 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$17,60 - Ônibus (dois eixos duplos), 
+R$ 24,60 - Ônibus com reboque (três eixos duplos),
+R$16,40 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$24,60 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$32,80 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$41,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$49,20 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$57,40 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$65,60 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$73,80 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-51.16877402994155</longitude>
+				<latitude>-25.30892177745273</latitude>
+				<altitude>0</altitude>
+				<heading>0.0002503822234166151</heading>
+				<tilt>0</tilt>
+				<range>562.2581689170287</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_dollar0001</styleUrl>
+			<Point>
+				<coordinates>-51.16816385507258,-25.30977008455488,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, Laranjeiras do Sul, PR</name>
+			<open>1</open>
+			<description>Pedágio - Laranjeiras do Sul - Cataratas PR
+
+Bidirecional - BR 277 - Km 464,5
+
+Valores do pedágio 
+
+R$4,50 - Motocicletas, motonetas e biciletas a motor, 
+R$8,90 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$13,40 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 17,80 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$17,80 - Ônibus (dois eixos duplos), 
+R$ 26,70 - Ônibus com reboque (três eixos duplos),
+R$15,00 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$22,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$30,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$37,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$45,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$52,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$60,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$67,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-52.49115747007467</longitude>
+				<latitude>-25.34670990889357</latitude>
+				<altitude>0</altitude>
+				<heading>0.4767475970100746</heading>
+				<tilt>0</tilt>
+				<range>391.1629813554544</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_dollar00100</styleUrl>
+			<Point>
+				<coordinates>-52.4913376512828,-25.3471324568199,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, Irati, PR</name>
+			<open>1</open>
+			<description>Pedágio - Irati 
+
+Bidirecional - BR 277 - Km 248,8
+
+Valores do pedágio 
+
+R$3,90 - Motocicletas, motonetas e biciletas a motor, 
+R$7,70 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$13,60 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 15,40 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$15,40 - Ônibus (dois eixos duplos), 
+R$ 20,40 - Ônibus com reboque (três eixos duplos),
+R$13,60 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$20,40 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$27,20 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$34,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$40,80 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$47,60 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$54,40 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$61,20 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-50.71582355169919</longitude>
+				<latitude>-25.43568721499533</latitude>
+				<altitude>0</altitude>
+				<heading>-0.1845202319354506</heading>
+				<tilt>0</tilt>
+				<range>532.6316287571542</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_dollar0001</styleUrl>
+			<Point>
+				<coordinates>-50.71632721075989,-25.4362420436827,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, Imbituva, PR</name>
+			<open>1</open>
+			<description>Pedágio - Imbituva 
+
+Bidirecional - BR 373 - Km 216,2
+
+Valores do pedágio 
+
+R$3,90 - Motocicletas, motonetas e biciletas a motor, 
+R$7,70 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$13,60 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 15,40 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$15,40 - Ônibus (dois eixos duplos), 
+R$ 20,40 - Ônibus com reboque (três eixos duplos),
+R$13,60 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$20,40 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$27,20 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$34,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$40,80 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$47,60 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$54,40 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$61,20 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-50.54355454385192</longitude>
+				<latitude>-25.15747441779406</latitude>
+				<altitude>0</altitude>
+				<heading>-0.2583409426639498</heading>
+				<tilt>0</tilt>
+				<range>501.7689348697363</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_dollar0001</styleUrl>
+			<Point>
+				<coordinates>-50.54282315636381,-25.15722459656481,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, Tibagi, PR</name>
+			<open>1</open>
+			<description>Pedágio - Tibagi 
+
+Bidirecional - BR 376 - Km 455,2
+
+Valores do pedágio 
+
+R$4,30 - Motocicletas, motonetas e biciletas a motor, 
+R$8,50 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$12,80 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 17,00 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$17,00 - Ônibus (dois eixos duplos), 
+R$ 25,50 - Ônibus com reboque (três eixos duplos),
+R$14,00 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$21,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$28,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$35,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$42,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$49,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$56,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$63,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-50.40903645385493</longitude>
+				<latitude>-24.92339162235133</latitude>
+				<altitude>0</altitude>
+				<heading>-0.2381520365277245</heading>
+				<tilt>0</tilt>
+				<range>341.5746370991374</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_dollar0001</styleUrl>
+			<Point>
+				<coordinates>-50.40910714573828,-24.92364501687671,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pedágio, Carambeí, PR</name>
+			<open>1</open>
+			<description>Pedágio - Carambeí 
+
+Bidirecional - PR 151 - Km 304
+
+Valores do pedágio 
+
+R$3,80 - Motocicletas, motonetas e biciletas a motor, 
+R$7,60 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$11,40 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 15,20 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$15,20 - Ônibus (dois eixos duplos), 
+R$ 22,80 - Ônibus com reboque (três eixos duplos),
+R$13,00 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$19,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$26,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$32,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$39,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$45,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$52,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$58,50 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+			<LookAt>
+				<longitude>-50.08704597005465</longitude>
+				<latitude>-24.91096528630848</latitude>
+				<altitude>0</altitude>
+				<heading>-0.3740965410783155</heading>
+				<tilt>0</tilt>
+				<range>618.1217343751196</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_dollar0001</styleUrl>
+			<Point>
+				<coordinates>-50.08667662139478,-24.91239679615891,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Polígono sem título</name>
+			<description>teste</description>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

@@ -1,5 +1,8 @@
 package model;
 
+import javax.persistence.Embeddable;
+
+@Embeddable
 public class LatLng {
 	private double lat;
 	private double lng;
