@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Pedágio, Imbaú, PR.kml</name>
+	<StyleMap id="m_ylw-pushpin750">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin0091</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl11020</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl11020">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/dollar.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin0091">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/dollar.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>Pedágio, Imbaú, PR</name>
+		<open>1</open>
+		<description>Pedágio - Imbaú 
+
+Bidirecional - BR 376 - Km 377
+
+Valores do pedágio 
+
+R$4,30 - Motocicletas, motonetas e biciletas a motor, 
+R$8,50 - Automóvel, caminhoneta e furgão (dois eixos simples),
+R$12,80 - Automóvel, caminhoneta com semi-reboque (três eixos simples) 
+R$ 17,00 - Automóvel, caminhoneta com reboque (Quatro eixos simples),
+R$17,00 - Ônibus (dois eixos duplos), 
+R$ 25,50 - Ônibus com reboque (três eixos duplos),
+R$14,00 - Caminhão leve, furgão e cavalo mecânico (dois eixos duplos),
+R$21,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (três eixos duplos),
+R$28,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (quatro eixos duplos),
+R$35,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (cinco eixos duplos),
+R$42,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (seis eixos duplos),
+R$49,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (sete eixos duplos),
+R$56,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (oito eixos duplos),
+R$63,00 - Caminhão, caminhão trator, cavalo mecânico com semi-reboque (nove eixos duplos).
+
+Atualizado em :21/12/2012</description>
+		<LookAt>
+			<longitude>-50.790797163589</longitude>
+			<latitude>-24.38125757526344</latitude>
+			<altitude>0</altitude>
+			<heading>0.4649352247252908</heading>
+			<tilt>0</tilt>
+			<range>789.5220936967788</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin750</styleUrl>
+		<Point>
+			<coordinates>-50.79027623116868,-24.3823382088735,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

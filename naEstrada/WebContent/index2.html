@@ -20,7 +20,7 @@ html, body {
 	height: 100%;
 }
 
-.praca {
+.nome-praca {
 	font-size: 1.5em;
 }
 
@@ -68,10 +68,11 @@ html, body {
 	<div id="map"></div>
 
 	<script>
+		var map;
 		function initMap() {
 			var origin_place_id = null;
 			var destination_place_id = null;
-			var map = new google.maps.Map(document.getElementById('map'), {
+			map = new google.maps.Map(document.getElementById('map'), {
 				mapTypeControl : false,
 				center : {
 					lat : -33.8688,
@@ -168,8 +169,13 @@ html, body {
 					}
 				});
 			}
+
+		
 		}
 
+		function focarNaPraca(latLng) {
+			map.setCenter(new google.maps.LatLng(latLng.lat, latLng.lng));	
+		}
 		function viagemRoteirizada(response) {
 			var polyline = extrairPolyline(response);
 			document.getElementById("distancia-result").innerText = response.routes[0].legs[0].distance.text;
@@ -219,41 +225,72 @@ html, body {
 			return x;
 		}
 
-		function exibirCalculoViagem(dados) {
-			//TODO
-			/*
-			var resposta = "";
-			for (var i in dados) {
-				for (var j in dados[i]) {
-					resposta += j + ": " + dados[i][j] + "\n";
-				}
-			}
-			alert(resposta);
-			*/
-			console.log(dados);
-			
+		function exibirCalculoViagem_antigo(dados) {
 			// Exibição das praças de pedágio.
 			var pracas = document.getElementById("pracas");
 			var div = "";
 			var valorPedagio = 0;
 			for (var i in dados) {
+				var lat = dados[i].latLng.lat;
+				var lng = dados[i].latLng.lng;
+				//div += "<p/><div onclick='map.panTo(new google.maps.LatLng(" + lat + ", " + lng + "));console.log(" + dados[i] + ")'>";
 				div += "<p/><div>";
 				div += '<span class="praca">' + dados[i].praca + "</span><br/>";
 				div += dados[i].valor + "<br/>";
 				valorPedagio += dados[i].valor;
 				div += dados[i].municipio + "<br/>";
 				div += dados[i].concessionaria + "<br/>";
-				
-				/*
-				for (var j in dados[i]) {
-					div += j + ": " + dados[i][j] + "<br/>";
-				}
-				*/
 				div += "</div>";
 			}
 			document.getElementById("pedagio-result").innerText = valorPedagio;
 			pracas.innerHTML = div;
+			var elementos = document.getElementsByClassName("praca");
+			for (var e in elementos) {
+				elementos[e].addEventListener('click', function() {
+					alert('clicou ' + this.innerText);
+				});
+			}
 		}
+		
+		function exibirCalculoViagem(dados) {
+			// Exibição das praças de pedágio.
+			var pracas = document.getElementById("pracas");
+			var div = "";
+			var valorPedagio = 0;
+			for (var i in dados) {
+				var lat = dados[i].latLng.lat;
+				var lng = dados[i].latLng.lng;
+
+				var praca = document.createElement("div");
+				praca.setAttribute("lat", dados[i].latLng.lat);
+				praca.setAttribute("lng", dados[i].latLng.lng);
+				praca.className = "praca";
+				
+				var nome = document.createElement("div");
+				nome.appendChild(document.createTextNode(dados[i].praca));
+				nome.className = "nome-praca";
+				
+				var valor = document.createElement("div");
+				valor.appendChild(document.createTextNode(dados[i].valor));
+				
+				praca.appendChild(nome);
+				praca.appendChild(valor);
+
+				pracas.appendChild(praca);
+				
+				valorPedagio += dados[i].valor;
+			}
+			document.getElementById("pedagio-result").innerText = valorPedagio;
+			var elementos = document.getElementsByClassName("praca");
+			for (var e in elementos) {
+				elementos[e].addEventListener('click', function() {
+					//alert('clicou ' + this.innerText);
+					var ponto = new google.maps.LatLng(this.getAttribute("lat"), this.getAttribute("lng"));
+					map.panTo(ponto);
+				});
+			}
+		}
+		
 	</script>
 	<script
 		src="https://maps.googleapis.com/maps/api/js?libraries=places&callback=initMap"
