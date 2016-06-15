@@ -1,0 +1,24 @@
+[
+	{
+		"consessionaria": "Viapar",
+		"praca": "Campo Mourao",
+		"valor": 10.50,
+		"latLng": {
+			"lat": -24.197745,
+			"lng": -52.501021
+		},
+		"raio": 40,
+		"municipio": "Campo Mourao - PR"
+	},
+	{
+		"consessionaria": "Viapar",
+		"praca": "Floresta",
+		"valor": 11.90,
+		"latLng": {
+			"lat": -23.636524,
+			"lng": -52.107552
+		},
+		"raio": 40,
+		"municipio": "Floresta - PR"
+	}
+]

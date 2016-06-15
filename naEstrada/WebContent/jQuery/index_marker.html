@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Marker Animations</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+		//font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+      }
+      #map {
+        height: 100%;
+      }
+	  #infoWindow{
+		width: 165px;
+	  }
+	     .labels {
+     color: black;
+	 padding: 2px;
+     font-family: "Lucida Grande", "Arial", sans-serif;
+     font-size: 11px;
+-webkit-border-radius: 10px 10px 0px 0px;-moz-border-radius: 10px 10px 0px 0px;border-radius: 30px 30px 30px 30px;
+	font-weight: bold;
+	//background-color:#0F4293;
+     text-align: center;
+	   //border-style: solid;
+	   //border-width:1px bottom;
+	   //border-bottom: 1px solid;
+    border-color: black;
+     width: 50px;
+	 text-shadow: -1px -1px 5px rgba(255, 255, 255, 1);
+	     white-space: nowrap;
+   }
+    </style>
+
+		     <script src="https://maps.googleapis.com/maps/api/js?key=&signed_in=true"></script>
+				 <script type="text/javascript" src="markerwithlabel.js"></script>
+				 <script>
+
+// The following example creates a marker in Stockholm, Sweden using a DROP
+// animation. Clicking on the marker will toggle the animation between a BOUNCE
+// animation and no animation.
+
+var Pedagio = function(_nome, _lat, _lng, _valor, _data){
+	this.lat = _lat;
+	this.lng = _lng;
+	this.valor = _valor;
+	this.nome = _nome
+	this.data = _data
+	this.getFormattedDate = function(){
+		return this.data.getMonth() + '/' + this.data.getDate() + '/' + this.data.getFullYear();
+	}
+}
+
+var PedagioMarker= function(_pedagio){
+	var pedagio;
+	this.pedagio = _pedagio;
+	
+
+	
+	this.createMarker = function(map){
+		var image = {
+		url: 'https://maps.gstatic.com/mapfiles/ms2/micons/red-pushpin.png',
+		// This marker is 20 pixels wide by 32 pixels high.
+		size: new google.maps.Size(32, 50),
+		// The origin for this image is (0, 0).
+		origin: new google.maps.Point(0, 0),
+		// The anchor for this image is the base of the flagpole at (0, 32).
+		anchor: new google.maps.Point(0, 32)
+		};
+	
+		var infoWindow = new google.maps.InfoWindow({
+			content: '<div id="infoWindow"><img align="left" height="30" width="30" src="52098-200.png"><b>'+this.pedagio.nome+'</b><br>'+
+					 '<b><font color="green">R$ '+this.pedagio.valor+'</font></b> em '+this.pedagio.getFormattedDate()+'</div>'
+		});
+		
+		var marker = new MarkerWithLabel({
+			position: new google.maps.LatLng(this.pedagio.lat, this.pedagio.lng),
+			draggable: false,
+			raiseOnDrag: false,
+			map: map,
+			icon: image,
+			labelContent: 'R$ '+this.pedagio.valor,
+			labelAnchor: new google.maps.Point(20, 0),
+			labelClass: "labels", // the CSS class for the label
+			labelStyle: {opacity: 5.0}
+		});
+		
+		marker.addListener('click', function() {
+			infoWindow.open(map, marker);
+		});
+	}
+}
+
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 13,
+    center: {lat: 59.325, lng: 18.070}
+  });
+  
+  var p = new Pedagio("Floresta", 59.325, 18.070, '18,00', new Date());
+  var pm = new PedagioMarker(p);
+  pm.createMarker(map);
+
+  var p2 = new Pedagio("Mamborê", 59.3601874, 17.9922374, '25,00', new Date());
+  var pm2 = new PedagioMarker(p2);
+  pm2.createMarker(map);
+
+
+  var p3 = new Pedagio("Campo Mourão",59.47874, 17.99274, '31,50', new Date());
+  var pm3 = new PedagioMarker(p3);
+  pm3.createMarker(map);
+
+ /* marker = new google.maps.Marker({
+    map: map,
+    draggable: true,
+    animation: google.maps.Animation.DROP,
+    position: {lat: 59.327, lng: 18.067}
+  });
+  marker.addListener('click', toggleBounce);*/
+}
+
+function toggleBounce() {
+/*  if (marker.getAnimation() !== null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }*/
+}
+
+
+    </script>
+  </head>
+  <body onload="initMap()">
+    <div id="map"></div>
+
+    
+
+  </body>
+</html>

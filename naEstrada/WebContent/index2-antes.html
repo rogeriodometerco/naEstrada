@@ -50,26 +50,6 @@ html, body {
 #origin-input:focus, #destination-input:focus {
 	border-color: #4d90fe;
 }
-
-.labels {
-	color: black;
-	padding: 2px;
-	font-family: "Lucida Grande", "Arial", sans-serif;
-	font-size: 11px;
-	-webkit-border-radius: 10px 10px 0px 0px;
-	-moz-border-radius: 10px 10px 0px 0px;
-	border-radius: 30px 30px 30px 30px;
-	font-weight: bold; //
-	background-color: #0F4293;
-	text-align: center; //
-	border-style: solid; //
-	border-width: 1px bottom; //
-	border-bottom: 1px solid;
-	border-color: black;
-	width: 50px;
-	text-shadow: -1px -1px 5px rgba(255, 255, 255, 1);
-	white-space: nowrap;
-}
 </style>
 </head>
 <body>
@@ -89,8 +69,6 @@ html, body {
 
 	<script>
 		var map;
-		var marcadores = [];
-		var infowindow;
 		function initMap() {
 			var origin_place_id = null;
 			var destination_place_id = null;
@@ -102,13 +80,14 @@ html, body {
 				},
 				zoom : 13
 			});
-			infowindow = new google.maps.InfoWindow();
 			var directionsService = new google.maps.DirectionsService;
 			var directionsDisplay = new google.maps.DirectionsRenderer;
 			directionsDisplay.setMap(map);
+
 			var panel = document.getElementById('panel');
 			var origin_input = document.getElementById('origin-input');
 			var destination_input = document.getElementById('destination-input');
+
 			/*map.controls[google.maps.ControlPosition.LEFT_TOP]
 					.push(panel);
 			*/
@@ -118,6 +97,7 @@ html, body {
 			var destination_autocomplete = new google.maps.places.Autocomplete(
 					destination_input);
 			destination_autocomplete.bindTo('bounds', map);
+
 			function expandViewportToFitPlace(map, place) {
 				if (place.geometry.viewport) {
 					map.fitBounds(place.geometry.viewport);
@@ -126,6 +106,7 @@ html, body {
 					map.setZoom(17);
 				}
 			}
+
 			origin_autocomplete
 					.addListener(
 							'place_changed',
@@ -137,12 +118,14 @@ html, body {
 									return;
 								}
 								expandViewportToFitPlace(map, place);
+
 								// If the place has a geometry, store its place ID and route if we have
 								// the other place ID
 								origin_place_id = place.place_id;
 								route(origin_place_id, destination_place_id,
 										directionsService, directionsDisplay);
 							});
+
 			destination_autocomplete
 					.addListener(
 							'place_changed',
@@ -154,12 +137,15 @@ html, body {
 									return;
 								}
 								expandViewportToFitPlace(map, place);
+
 								// If the place has a geometry, store its place ID and route if we have
 								// the other place ID
 								destination_place_id = place.place_id;
+
 								route(origin_place_id, destination_place_id,
 										directionsService, directionsDisplay);
 							});
+
 			function route(origin_place_id, destination_place_id, 
 					directionsService, directionsDisplay) {
 				if (!origin_place_id || !destination_place_id) {
@@ -183,25 +169,28 @@ html, body {
 					}
 				});
 			}
+
 		
 		}
+
 		function focarNaPraca(latLng) {
 			map.setCenter(new google.maps.LatLng(latLng.lat, latLng.lng));	
 		}
 		function viagemRoteirizada(response) {
 			var polyline = extrairPolyline(response);
 			document.getElementById("distancia-result").innerText = response.routes[0].legs[0].distance.text;
-			var calculo = submeter(polyline, exibirCalculoViagem);
-			//exibirCalculoViagem(calculo);
+			var calculo = submeter(polyline);
+			exibirCalculoViagem(calculo);
 			//$("#input").slideUp(); 
 		}
+
 		function extrairPolyline(dirResult) {
 			var latLngs = [];
 			var polyline = "";
 			for (var i = 0; i < dirResult.routes[0].legs.length; i++) {
 				for (var j = 0; j < dirResult.routes[0].legs[i].steps.length; j++) {
 					for (var k = 0; k < dirResult.routes[0].legs[i].steps[j].path.length; k++) {
-						// Primeiro elemento do segundo step � o �ltimo do step anterior.
+						// Primeiro elemento do segundo step é o último do step anterior.
 						if (k == 0 && j > 0) {
 							continue;
 						}
@@ -216,15 +205,15 @@ html, body {
 			}
 			return google.maps.geometry.encoding.encodePath(latLngs);
 		}
-		function submeter(polyline, callback) {
-			/*
+
+		function submeter(polyline) {
 			console.log("Submetendo: " + polyline);
 			var x = $.ajax({
-				type : 'GET',
+				type : 'POST',
 				contentType : 'application/json',
 				dataType : "JSON",
-				url : "json.txt",
-				//data : polyline,
+				url : "/naEstrada/rest/viagem",
+				data : polyline,
 				success : function(dados) {
 					exibirCalculoViagem(dados);
 				},
@@ -234,31 +223,10 @@ html, body {
 				}
 			});
 			return x;
-			*/
-			/*
-			var httpRequest = new XMLHttpRequest();
-			httpRequest.onreadystatechange = function() {
-				if (httpRequest.readyState === 4) {
-					if (httpRequest.status === 200) {
-						var data = JSON.parse(httpRequest.responseText);
-						callback(data);
-					}
-				}
-			};
-			httpRequest.open('GET', "json.txt");
-			httpRequest.send();
-			*/
-
-			$.ajax({
-			  url: "json.txt",
-			  dataType: "json",
-			  success: function(data) {exibirCalculoViagem(data)}
-			});
-
-
 		}
+
 		function exibirCalculoViagem_antigo(dados) {
-			// Exibi��o das pra�as de ped�gio.
+			// Exibição das praças de pedágio.
 			var pracas = document.getElementById("pracas");
 			var div = "";
 			var valorPedagio = 0;
@@ -285,18 +253,18 @@ html, body {
 		}
 		
 		function exibirCalculoViagem(dados) {
-			// Exibi��o das pra�as de ped�gio.
+			// Exibição das praças de pedágio.
 			var pracas = document.getElementById("pracas");
 			var div = "";
 			var valorPedagio = 0;
 			for (var i in dados) {
 				var lat = dados[i].latLng.lat;
 				var lng = dados[i].latLng.lng;
+
 				var praca = document.createElement("div");
 				praca.setAttribute("lat", dados[i].latLng.lat);
 				praca.setAttribute("lng", dados[i].latLng.lng);
 				praca.className = "praca";
-				praca.setAttribute("index", i);
 				
 				var nome = document.createElement("div");
 				nome.appendChild(document.createTextNode(dados[i].praca));
@@ -307,30 +275,10 @@ html, body {
 				
 				praca.appendChild(nome);
 				praca.appendChild(valor);
+
 				pracas.appendChild(praca);
 				
 				valorPedagio += dados[i].valor;
-				/*
-				 var marker = new google.maps.Marker({
-					position: new google.maps.LatLng(dados[i].latLng.lat, dados[i].latLng.lng),
-					map: map,
-					title: dados[i].praca
-				  });
-				  */
-				  //var p = new Pedagio(dados[i].praca, dados[i].latLng.lat, dados[i].latLng.lng, dados[i].valor, new Date());
-				  var p = new Pedagio(dados[i].praca, -24.5, -52.5, 13, new Date());
-				  var pm = new PedagioMarker(p);
-				  pm.createMarker(map);
-
-				 
-				atacharInfoWindow(dados[i].praca, marker);
-				marcadores.push(marker);
-				/*
-				  marker.addListener('click', function() {
-					infowindow.setContent(dados[i].praca);
-					infowindow.open(marker.get('map'), marker)
-				  });
-				*/
 			}
 			document.getElementById("pedagio-result").innerText = valorPedagio;
 			var elementos = document.getElementsByClassName("praca");
@@ -339,74 +287,6 @@ html, body {
 					//alert('clicou ' + this.innerText);
 					var ponto = new google.maps.LatLng(this.getAttribute("lat"), this.getAttribute("lng"));
 					map.panTo(ponto);
-					marker = marcadores[this.getAttribute("index")];
-					google.maps.event.trigger( marker, 'click' );
-				});
-			}
-		}
-		function atacharInfoWindow(praca, marker) {
-		  marker.addListener('click', function() {
-			infowindow.setContent(praca);
-			infowindow.open(marker.get('map'), marker)
-		  });
-	/*
-		  var infowindow = new google.maps.InfoWindow({
-			content: praca
-		  });
-		  marker.addListener('click', function() {
-			  infowindow.open(marker.get('map'), marker)
-		  });
-		  */
-		}
-
-		
-		var Pedagio = function(_nome, _lat, _lng, _valor, _data){
-			this.lat = _lat;
-			this.lng = _lng;
-			this.valor = _valor;
-			this.nome = _nome
-			this.data = _data
-			this.getFormattedDate = function(){
-				return this.data.getMonth() + '/' + this.data.getDate() + '/' + this.data.getFullYear();
-			}
-		}
-
-		var PedagioMarker= function(_pedagio){
-			var pedagio;
-			this.pedagio = _pedagio;
-			
-
-			
-			this.createMarker = function(map){
-				var image = {
-				url: 'https://maps.gstatic.com/mapfiles/ms2/micons/red-pushpin.png',
-				// This marker is 20 pixels wide by 32 pixels high.
-				size: new google.maps.Size(32, 50),
-				// The origin for this image is (0, 0).
-				origin: new google.maps.Point(0, 0),
-				// The anchor for this image is the base of the flagpole at (0, 32).
-				anchor: new google.maps.Point(0, 32)
-				};
-			
-				var infoWindow = new google.maps.InfoWindow({
-					content: '<div id="infoWindow"><img align="left" height="30" width="30" src="resources/icons/52098-200.png"><b>'+this.pedagio.nome+'</b><br>'+
-							 '<b><font color="green">R$ '+this.pedagio.valor+'</font></b> em '+this.pedagio.getFormattedDate()+'</div>'
-				});
-				
-				var marker = new MarkerWithLabel({
-					position: new google.maps.LatLng(this.pedagio.lat, this.pedagio.lng),
-					draggable: false,
-					raiseOnDrag: false,
-					map: map,
-					icon: image,
-					labelContent: 'R$ '+this.pedagio.valor,
-					labelAnchor: new google.maps.Point(20, 0),
-					labelClass: "labels", // the CSS class for the label
-					labelStyle: {opacity: 5.0}
-				});
-				
-				marker.addListener('click', function() {
-					infoWindow.open(map, marker);
 				});
 			}
 		}
@@ -415,11 +295,9 @@ html, body {
 	<script
 		src="https://maps.googleapis.com/maps/api/js?libraries=places&callback=initMap"
 		async defer>
+		
 	</script>
 	<script
 		src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		     <script src="https://maps.googleapis.com/maps/api/js?key=&signed_in=true"></script>
-				 <script type="text/javascript" src="resources/js/markerwithlabel.js"></script>
-
 </body>
 </html>
