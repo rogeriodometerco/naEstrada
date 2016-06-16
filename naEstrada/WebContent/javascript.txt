@@ -1,0 +1,93 @@
+{
+	"pracas": [
+		{
+			"nome": "Floresta",
+			"latLng": {
+				"lat": -23.636524,
+				"lng": -52.107552
+			},
+			"municipio": "Floresta - PR",
+			"concessionaria": {
+				"nome": "Viapar"
+			},
+			"tarifas": [
+				{
+					"categoria": "MOTOCICLETA"
+					"valor": 4.50,
+					"aplicacao": "VEICULO"
+				},
+				{
+					"categoria": "AUTO",
+					"valor": 5.25,
+					"aplicacao": "EIXO"
+				},
+				{
+					"categoria": "CAMINHAO",
+					"valor": 7.20,
+					"aplicacao": "EIXO"
+				},
+				{
+					"categoria": "ONIBUS",
+					"valor": 9.80,
+					"aplicacao": "EIXO"
+				}				
+			]
+		}
+	]
+}
+
+
+var Concessionaria = function(nome) {
+	this.nome = nome;
+
+	this.getNome = function() {
+		return this.nome;
+	}
+}
+
+var LatLng = function(lat, lng) {
+	this.lat = lat;
+	this.lng = lng;
+
+	this.getLat = function() {
+		return this.lat;
+	}
+	this.getLng = function() {
+		return this.lng;
+	}
+}
+
+var Tarifa = function(categoria, valor, aplicacao) {
+	this.categoria = categoria;
+	this.valor = valor;
+	this.aplicacao = aplicacao;
+}
+
+var AplicacaoTarifa = {
+	VEICULO: "VEICULO",
+	EIXO: "EIXO"
+}
+
+var Praca = function(nome, latLng, municipio, concessionaria, tarifas) {
+	this.nome = nome;
+	this.latLng = latLng;
+	this.municipio = municipio;
+	this.concessionaria = concessionaria;
+	this.tarifas = tarifas;
+
+	this.getValor = function(categoria, eixos) {
+		var valor = 0;
+		var aplicacao;
+		for (var i in tarifas) {
+			if (tarifas[i].categoria == categoria) {
+				valor = tarifas[i].valor;
+				aplicacao = tarifas[i].aplicacao;
+				break;
+			}
+		}
+		if (aplicacao == AplicacaoTarifa.EIXO) {
+			valor *= eixos;
+		}
+		return valor;
+	}
+}
