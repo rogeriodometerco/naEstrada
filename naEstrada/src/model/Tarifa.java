@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -19,9 +21,8 @@ public class Tarifa {
 	private Categoria categoria;
 	
 	private Double valor;
+	private Date dataVigencia;
 	
-	private AplicacaoTarifa aplicacao;
-
 	public Long getId() {
 		return id;
 	}
@@ -54,12 +55,12 @@ public class Tarifa {
 		this.valor = valor;
 	}
 
-	public AplicacaoTarifa getAplicacao() {
-		return aplicacao;
+	public Date getDataVigencia() {
+		return dataVigencia;
 	}
 
-	public void setAplicacao(AplicacaoTarifa aplicacao) {
-		this.aplicacao = aplicacao;
+	public void setDataVigencia(Date dataVigencia) {
+		this.dataVigencia = dataVigencia;
 	}
 	
 }

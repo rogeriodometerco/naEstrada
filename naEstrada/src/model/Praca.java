@@ -1,10 +1,13 @@
 package model;
 
+import java.util.List;
+
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Praca {
@@ -16,7 +19,8 @@ public class Praca {
 	private String nome;
 	@Embedded
 	private LatLng latLng;
-	private String municipio;
+	@OneToMany
+	private List<Tarifa> tarifas;
 	
 	@ManyToOne
 	private Concessionaria concessionaria;
@@ -45,14 +49,6 @@ public class Praca {
 		this.latLng = latLng;
 	}
 
-	public String getMunicipio() {
-		return municipio;
-	}
-
-	public void setMunicipio(String municipio) {
-		this.municipio = municipio;
-	}
-
 	public Concessionaria getConcessionaria() {
 		return concessionaria;
 	}
@@ -60,7 +56,13 @@ public class Praca {
 	public void setConcessionaria(Concessionaria concessionaria) {
 		this.concessionaria = concessionaria;
 	}
-	
-	
+
+	public List<Tarifa> getTarifas() {
+		return tarifas;
+	}
+
+	public void setTarifas(List<Tarifa> tarifas) {
+		this.tarifas = tarifas;
+	}
 	
 }

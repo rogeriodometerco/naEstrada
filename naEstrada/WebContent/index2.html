@@ -78,6 +78,11 @@ html, body {
 			placeholder="Origem"> <input id="destination-input"
 			class="controls" type="text" placeholder="Destino">
 		<p />
+		<select id="categoria">
+			<option value="AUTO">Auto</option>
+			<option value="CAMINHAO">Caminhão</option>
+			<option value="MOTOCICLETA">Motocicleta</option>
+		</select> 
 		<label>Distância</label> <span id="distancia-result"></span>
 		<p />
 		<label>Valor do pedágio</label> <span id="pedagio-result"></span>
@@ -90,8 +95,9 @@ html, body {
 	<script>
 		var map;
 		var marcadores = [];
-		var infowindow;
+		var infoWindow;// = new google.maps.InfoWindow();
 		function initMap() {
+			infoWindow = new google.maps.InfoWindow();
 			var origin_place_id = null;
 			var destination_place_id = null;
 			map = new google.maps.Map(document.getElementById('map'), {
@@ -102,7 +108,7 @@ html, body {
 				},
 				zoom : 13
 			});
-			infowindow = new google.maps.InfoWindow();
+			infoWindow = new google.maps.InfoWindow();
 			var directionsService = new google.maps.DirectionsService;
 			var directionsDisplay = new google.maps.DirectionsRenderer;
 			directionsDisplay.setMap(map);
@@ -241,102 +247,81 @@ html, body {
 				if (httpRequest.readyState === 4) {
 					if (httpRequest.status === 200) {
 						var data = JSON.parse(httpRequest.responseText);
-						callback(data);
+						exibirCalculoViagem(data);
 					}
 				}
 			};
-			httpRequest.open('GET', "json.txt");
+			httpRequest.open('GET', "estrutura-resposta.txt");
 			httpRequest.send();
 			*/
 
 			$.ajax({
-			  url: "json.txt",
+			  url: "estrutura-resposta.txt",
 			  dataType: "json",
-			  success: function(data) {exibirCalculoViagem(data)}
+			  success: function(data) {
+				  exibirCalculoViagem(data)
+				  console.log("success");
+			  },
+			  error: function() {
+				  console.log("erro ocorreu");
+			  }
 			});
 
 
 		}
-		function exibirCalculoViagem_antigo(dados) {
-			// Exibi��o das pra�as de ped�gio.
-			var pracas = document.getElementById("pracas");
-			var div = "";
-			var valorPedagio = 0;
-			for (var i in dados) {
-				var lat = dados[i].latLng.lat;
-				var lng = dados[i].latLng.lng;
-				//div += "<p/><div onclick='map.panTo(new google.maps.LatLng(" + lat + ", " + lng + "));console.log(" + dados[i] + ")'>";
-				div += "<p/><div>";
-				div += '<span class="praca">' + dados[i].praca + "</span><br/>";
-				div += dados[i].valor + "<br/>";
-				valorPedagio += dados[i].valor;
-				div += dados[i].municipio + "<br/>";
-				div += dados[i].concessionaria + "<br/>";
-				div += "</div>";
-			}
-			document.getElementById("pedagio-result").innerText = valorPedagio;
-			pracas.innerHTML = div;
-			var elementos = document.getElementsByClassName("praca");
-			for (var e in elementos) {
-				elementos[e].addEventListener('click', function() {
-					alert('clicou ' + this.innerText);
-				});
-			}
-		}
-		
+
 		function exibirCalculoViagem(dados) {
 			// Exibi��o das pra�as de ped�gio.
 			var pracas = document.getElementById("pracas");
 			var div = "";
 			var valorPedagio = 0;
-			for (var i in dados) {
-				var lat = dados[i].latLng.lat;
-				var lng = dados[i].latLng.lng;
-				var praca = document.createElement("div");
-				praca.setAttribute("lat", dados[i].latLng.lat);
-				praca.setAttribute("lng", dados[i].latLng.lng);
-				praca.className = "praca";
-				praca.setAttribute("index", i);
+			var pedagios = dados.pedagios;
+			for (var i in pedagios) {
+				var praca = pedagios[i].praca;
+				var pracaDiv = document.createElement("div");
+				pracaDiv.setAttribute("lat", praca.latLng.lat);
+				pracaDiv.setAttribute("lng", praca.latLng.lng);
+				pracaDiv.className = "pedagio";
+				pracaDiv.setAttribute("index", i);
 				
 				var nome = document.createElement("div");
-				nome.appendChild(document.createTextNode(dados[i].praca));
+				nome.appendChild(document.createTextNode(praca.nome));
 				nome.className = "nome-praca";
 				
 				var valor = document.createElement("div");
-				valor.appendChild(document.createTextNode(dados[i].valor));
+				valor.appendChild(document.createTextNode(pedagios[i].valor));
 				
-				praca.appendChild(nome);
-				praca.appendChild(valor);
-				pracas.appendChild(praca);
+				pracaDiv.appendChild(nome);
+				pracaDiv.appendChild(valor);
+				pracas.appendChild(pracaDiv);
 				
-				valorPedagio += dados[i].valor;
-				/*
+				//console.log(pracaDiv);
+				
+				valorPedagio += pedagios[i].valor;
+				 /*
 				 var marker = new google.maps.Marker({
-					position: new google.maps.LatLng(dados[i].latLng.lat, dados[i].latLng.lng),
+					position: new google.maps.LatLng(praca.latLng.lat, praca.latLng.lng),
 					map: map,
-					title: dados[i].praca
+					title: praca.nome
 				  });
-				  */
-				  //var p = new Pedagio(dados[i].praca, dados[i].latLng.lat, dados[i].latLng.lng, dados[i].valor, new Date());
-				  var p = new Pedagio(dados[i].praca, -24.5, -52.5, 13, new Date());
+*/
+				 var p = new Pedagio(praca.nome, praca.latLng.lat, praca.latLng.lng, pedagios[i].valor, new Date());
 				  var pm = new PedagioMarker(p);
-				  pm.createMarker(map);
+				 var marker = pm.createMarker(map);
 
-				 
-				atacharInfoWindow(dados[i].praca, marker);
+//				atacharInfoWindow(praca.nome, marker);
 				marcadores.push(marker);
 				/*
 				  marker.addListener('click', function() {
-					infowindow.setContent(dados[i].praca);
-					infowindow.open(marker.get('map'), marker)
+					infoWindow.setContent(dados[i].praca);
+					infoWindow.open(marker.get('map'), marker)
 				  });
 				*/
 			}
 			document.getElementById("pedagio-result").innerText = valorPedagio;
-			var elementos = document.getElementsByClassName("praca");
-			for (var e in elementos) {
+			var elementos = document.getElementsByClassName("pedagio");
+			for (var e = 0; e < elementos.length; e++) {
 				elementos[e].addEventListener('click', function() {
-					//alert('clicou ' + this.innerText);
 					var ponto = new google.maps.LatLng(this.getAttribute("lat"), this.getAttribute("lng"));
 					map.panTo(ponto);
 					marker = marcadores[this.getAttribute("index")];
@@ -346,15 +331,15 @@ html, body {
 		}
 		function atacharInfoWindow(praca, marker) {
 		  marker.addListener('click', function() {
-			infowindow.setContent(praca);
-			infowindow.open(marker.get('map'), marker)
+			infoWindow.setContent(praca);
+			infoWindow.open(marker.get('map'), marker)
 		  });
 	/*
-		  var infowindow = new google.maps.InfoWindow({
+		  var infoWindow = new google.maps.InfoWindow({
 			content: praca
 		  });
 		  marker.addListener('click', function() {
-			  infowindow.open(marker.get('map'), marker)
+			  infoWindow.open(marker.get('map'), marker)
 		  });
 		  */
 		}
@@ -387,12 +372,12 @@ html, body {
 				// The anchor for this image is the base of the flagpole at (0, 32).
 				anchor: new google.maps.Point(0, 32)
 				};
-			
+
 				var infoWindow = new google.maps.InfoWindow({
 					content: '<div id="infoWindow"><img align="left" height="30" width="30" src="resources/icons/52098-200.png"><b>'+this.pedagio.nome+'</b><br>'+
 							 '<b><font color="green">R$ '+this.pedagio.valor+'</font></b> em '+this.pedagio.getFormattedDate()+'</div>'
 				});
-				
+
 				var marker = new MarkerWithLabel({
 					position: new google.maps.LatLng(this.pedagio.lat, this.pedagio.lng),
 					draggable: false,
@@ -405,21 +390,27 @@ html, body {
 					labelStyle: {opacity: 5.0}
 				});
 				
+				//marker.addListener('click', function() {alert(this.pedagio.lat)});
+				
 				marker.addListener('click', function() {
-					infoWindow.open(map, marker);
+					/*
+					infoWindow.setContent('<div id="infoWindow"><img align="left" height="30" width="30" src="resources/icons/52098-200.png"><b>'+pedagio.nome+'</b><br>'+
+					 '<b><font color="green">R$ '+pedagio.valor+'</font></b> em '+pedagio.getFormattedDate()+'</div>')
+					*/
+					 infoWindow.open(map, marker);
 				});
+				return marker;
 			}
 		}
 		
 	</script>
 	<script
-		src="https://maps.googleapis.com/maps/api/js?libraries=places&callback=initMap"
-		async defer>
+		src="https://maps.googleapis.com/maps/api/js?libraries=places&callback=initMap">
 	</script>
 	<script
 		src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		     <script src="https://maps.googleapis.com/maps/api/js?key=&signed_in=true"></script>
-				 <script type="text/javascript" src="resources/js/markerwithlabel.js"></script>
+	<script type="text/javascript" src="resources/js/markerwithlabel.js"></script>
+
 
 </body>
 </html>

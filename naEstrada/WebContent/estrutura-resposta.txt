@@ -1,0 +1,30 @@
+{
+	"pedagios": [
+		{
+			"valor": 13.5,
+			"praca": {
+				"nome": "Floresta",
+				"latLng": {
+					"lat": -23.636524,
+					"lng": -52.107552
+				},
+				"concessionaria": {
+					"nome": "Viapar"
+				}
+			}
+		},
+		{
+			"valor": 11.2,
+			"praca": {
+				"nome": "Campo Mourao",
+				"latLng": {
+					"lat": -24.197745,
+					"lng": -52.501021
+				},
+				"concessionaria": {
+					"nome": "Viapar"
+				}
+			}
+		}
+	]
+}
